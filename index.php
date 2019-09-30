@@ -11,6 +11,7 @@
 
 		<!-- FOLHAS DE ESTILO CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
 	</head>
 
 	<body>
@@ -44,6 +45,8 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/twitter_clone.js"></script>
+		
 	
 	</body>
 </html>
