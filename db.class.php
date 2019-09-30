@@ -1,7 +1,7 @@
 <?php
 
 class db {
-	private $host = 'localhost';
+    private $host = 'localhost';
 	private $database = 'twitter_clone';
 	private $usuario = 'root';
 	private $senha = '';

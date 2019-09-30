@@ -1,3 +1,6 @@
+<?php
+	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
@@ -18,6 +21,13 @@
 		?>
 	<!-- FIM NAVBAR -->
 
+		<?php
+			if($erro==1){
+				echo '<div class="alert alert-danger text-center" role="alert">';
+				echo 'Usuário ou senha inválidos.';
+				echo '</div>';
+			}
+		?>
 
 	    <div class="container">
 

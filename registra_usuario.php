@@ -12,6 +12,7 @@
 
     if(mysqli_query($link, $sql)) {
         echo 'Usuário registrado com sucesso!';
+        header('Location: index.php?cad_usu=1');
     } else {
         echo 'Erro ao registrar o usuário!';
     }
