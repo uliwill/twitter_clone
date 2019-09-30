@@ -1,7 +1,6 @@
 <?php
 
 class db {
-
 	private $host = 'localhost';
 	private $database = 'twitter_clone';
 	private $usuario = 'root';
@@ -17,5 +16,4 @@ class db {
         return $con;
 	}
 }
-
 ?>
