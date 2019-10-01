@@ -3,7 +3,7 @@
 
     $usuario = $_POST['usuario'];
     $email   = $_POST['email'];
-    $senha   = $_POST['senha'];
+    $senha   = md5($_POST['senha']);
 
     $objDb = new db();
     $link = $objDb->conecta_mysql();
@@ -12,7 +12,7 @@
 
     if(mysqli_query($link, $sql)) {
         echo 'Usuário registrado com sucesso!';
-        header('Location: index.php?cad_usu=1');
+        header('Location: index.php');
     } else {
         echo 'Erro ao registrar o usuário!';
     }
