@@ -7,39 +7,65 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8">
-
-		<title>Twitter Clone</title>
-
-		<!-- FOLHAS DE ESTILO CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-	
+		<?php
+			include_once("head.php");
+		?>
 	</head>
-
 	<body>
 
 	<!-- NAVBAR -->
 		<?php
-			include_once("navbar.html");
+			include_once("navbar.php");
 		?>
 	<!-- FIM NAVBAR -->
  
 		<div class="container-fluid">
-            Usuário autenticado!
-            <br />
-            <?= $_SESSION['usuario'] ?>
-            <br />
-            <?= $_SESSION['email'] ?>
+			<div class="row">
+				<div class="col-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 text-center">
+									<h4><?= $_SESSION['usuario'] ?></h4>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-6 texto8 text-center">TWEETS<br />1</div>
+								<div class="col-6 texto8 text-center">SEGUIDORES<br />1</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="card">
+						<div class="card-body">
+							<div class="input-group">
+								<input type="text" id="texto_tweet" class="form-control" placeholder="O que está acontecendo agora?" maxlength="140" />
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button" id="btn_tweet">Tweet</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card">
+						<div class="card-body text-center">
+							<h5><a href="#">Procurar por pessoas</a></h5>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>		
 
-		<div class="clearfix"></div>
 
 
-
-	
 		<!-- SCRIPTS JAVASCRIPT  -->
 		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/twitter_clone.js"></script>
 	
 	</body>
 </html>

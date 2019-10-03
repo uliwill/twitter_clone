@@ -1,0 +1,13 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+}
+
+.texto8 {
+    font-size: 0.5em;
+}

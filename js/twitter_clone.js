@@ -21,5 +21,11 @@ $(document).ready(function() {
         if(campo_vazio) return false;
     });
 
+    $('#btn_tweet').click(function() {
+        
+        if($('#texto_tweet').val().length > 0) {
+            alert($('#texto_tweet').val());
+        }
+    });
 
 });

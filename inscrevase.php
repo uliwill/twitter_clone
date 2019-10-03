@@ -5,20 +5,16 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8">
-
-		<title>Twitter Clone</title>
-
-		<!-- FOLHAS DE ESTILO CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-	
+		<?php
+			include_once("head.php");
+		?>
 	</head>
 
 	<body>
 
 	<!-- NAVBAR -->
 		<?php
-			include_once("navbar.html");
+			include_once("navbar.php");
 		?>
 	<!-- FIM NAVBAR -->
  
