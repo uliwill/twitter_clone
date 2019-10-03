@@ -41,9 +41,9 @@
 					<div class="card">
 						<div class="card-body">
 							<div class="input-group">
-								<input type="text" id="texto_tweet" class="form-control" placeholder="O que está acontecendo agora?" maxlength="140" />
+								<input type="text" id="texto_tweet" name="texto_tweet" class="form-control" placeholder="O que está acontecendo agora?" maxlength="140" />
 								<span class="input-group-btn">
-									<button class="btn btn-default" type="button" id="btn_tweet">Tweet</button>
+									<button class="btn btn-default" type="button" id="btn_tweet" name="btn_tweet">Tweet</button>
 								</span>
 							</div>
 						</div>

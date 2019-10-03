@@ -24,7 +24,13 @@ $(document).ready(function() {
     $('#btn_tweet').click(function() {
         
         if($('#texto_tweet').val().length > 0) {
-            alert($('#texto_tweet').val());
+            $.ajax({
+                url: '/twitter_clone/inclui_tweet.php',
+                method: 'post',
+                data: {texto_tweet: $('#texto_tweet').val()},
+                success: function(data) {
+                }
+            });
         }
     });
 
