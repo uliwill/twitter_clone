@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // LOGIN
     $('#btn_login').click(function() {
 
         var campo_vazio = false;
@@ -20,18 +21,30 @@ $(document).ready(function() {
 
         if(campo_vazio) return false;
     });
-
+    // INCLUIR TWEETS
     $('#btn_tweet').click(function() {
-        
         if($('#texto_tweet').val().length > 0) {
             $.ajax({
                 url: '/twitter_clone/inclui_tweet.php',
                 method: 'post',
                 data: {texto_tweet: $('#texto_tweet').val()},
                 success: function(data) {
+                    $('#texto_tweet').val('');
+                    atualizaTweet();
                 }
             });
         }
     });
+    // ATUALIZAR TWEETS
+    function atualizaTweet() {
+        $.ajax({
+            url: '/twitter_clone/get_tweet.php',
+            success: function(data) {
+                $('#tweets').html(data);
+            }
+        });
+    }
+    atualizaTweet();
+
 
 });
