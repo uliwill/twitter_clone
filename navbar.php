@@ -1,18 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php"><img src="imagens/icone_twitter.png" alt="Logo Twitter"/></a>
+    <a class="navbar-brand" href="#"><img src="imagens/icone_twitter.png" alt="Logo Twitter"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav_inscrever">
                 <a class="nav-link" href="inscrevase.php">Inscrever-se</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" id="nav_login">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                 Entrar
                 </a>
@@ -32,8 +29,8 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sair.php">Sair</a>
+            <li class="invisible" id="nav_sair">
+                <a class="nav-link" href="sair.php" id="btn_sair">Sair</a>
             </li>
         </ul>
     </div>

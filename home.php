@@ -60,13 +60,19 @@
 			</div>
 		</div>		
 
-
-
 		<!-- SCRIPTS JAVASCRIPT  -->
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/twitter_clone.js"></script>
+		<script type="text/javascript">
+			function ocultaNav() {
+        	$('#nav_login').attr('class', 'invisible');
+        	$('#nav_inscrever').attr('class', 'invisible');
+        	$('#nav_sair').attr('class', 'nav-item');
+   			 }
+			ocultaNav();
+		</script>
 	
 	</body>
 </html>

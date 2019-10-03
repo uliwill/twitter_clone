@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $("#conteudo").load("cont_index.php");
+
     // LOGIN
     $('#btn_login').click(function() {
 
@@ -18,9 +20,10 @@ $(document).ready(function() {
         } else {
             $('#campo_senha').css({'border-color': '#CCC'});
         }
-
         if(campo_vazio) return false;
+        
     });
+
     // INCLUIR TWEETS
     $('#btn_tweet').click(function() {
         if($('#texto_tweet').val().length > 0) {
@@ -35,6 +38,7 @@ $(document).ready(function() {
             });
         }
     });
+
     // ATUALIZAR TWEETS
     function atualizaTweet() {
         $.ajax({
