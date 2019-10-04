@@ -40,21 +40,21 @@
 				<div class="col-6">
 					<div class="card">
 						<div class="card-body">
-							<div class="input-group">
-								<input type="text" id="texto_tweet" name="texto_tweet" class="form-control" placeholder="O que está acontecendo agora?" maxlength="140" />
+							<form class="input-group" id="form_procurar_pessoas">
+								<input type="text" id="nome_pessoa" name="nome_pessoa" class="form-control" placeholder="Quem você está procurando?" maxlength="140" />
 								<span class="input-group-btn">
-									<button class="btn btn-default" type="button" id="btn_tweet" name="btn_tweet">Tweet</button>
+									<button class="btn btn-default" type="button" id="btn_procurar_pessoa" name="btn_procurar_pessoa">Procurar</button>
 								</span>
-							</div>
+                            </form>
 						</div>
-					</div>
-					<br />
-					<div id="tweets" class="list-group"></div>
+                    </div>
+                    <br />
+					<div id="pessoas" class="list-group"></div>
 				</div>
 				<div class="col-3">
 					<div class="card">
 						<div class="card-body text-center">
-							<h5><a href="procurar_pessoas.php">Procurar por pessoas</a></h5>
+							
 						</div>
 					</div>
 				</div>

@@ -50,5 +50,18 @@ $(document).ready(function() {
     }
     atualizaTweet();
 
+    // PROCURAR PESSOAS
+    $('#btn_procurar_pessoa').click(function() {
+        if($('#nome_pessoa').val().length > 0) {
+            $.ajax({
+                url: '/twitter_clone/get_pessoas.php',
+                method: 'post',
+                data: $('#form_procurar_pessoas').serialize(),
+                success: function(data) {
+                    $('#pessoas').html(data);
+                }
+            });
+        }
+    });
 
 });
