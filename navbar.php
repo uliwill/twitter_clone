@@ -29,8 +29,8 @@
                     </div>
                 </div>
             </li>
-            <li class="invisible" id="nav_sair">
-                <a class="nav-link" href="sair.php" id="btn_sair">Sair</a>
+            <li class="nao_exibir" id="nav_sair">
+                <a class="btn btn-danger" href="sair.php" id="btn_sair">Sair</a>
             </li>
         </ul>
     </div>

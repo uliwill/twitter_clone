@@ -68,8 +68,8 @@
 		<script src="js/twitter_clone.js"></script>
 		<script type="text/javascript">
 			function ocultaNav() {
-        	$('#nav_login').attr('class', 'invisible');
-        	$('#nav_inscrever').attr('class', 'invisible');
+        	$('#nav_login').attr('class', 'nao_exibir');
+        	$('#nav_inscrever').attr('class', 'nao_exibir');
         	$('#nav_sair').attr('class', 'nav-item');
    			 }
 			ocultaNav();
