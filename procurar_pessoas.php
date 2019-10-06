@@ -49,7 +49,7 @@
 						</div>
                     </div>
                     <br />
-					<div id="pessoas" class="list-group"></div>
+					<div id="pessoas"></div>
 				</div>
 				<div class="col-3">
 					<div class="card">
