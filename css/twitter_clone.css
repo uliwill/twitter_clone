@@ -11,3 +11,7 @@ body {
 .texto8 {
     font-size: 0.5em;
 }
+
+.nao_exibir {
+	display: none;
+}
