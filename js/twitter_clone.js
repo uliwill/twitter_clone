@@ -104,6 +104,7 @@ $(document).ready(function() {
             url: '/twitter_clone/num_tweet.php',
             success: function(data) {
                 $('#num_tweets').html(data);
+                $('#num_tweets2').html(data);
             }
         });
     }
@@ -115,6 +116,7 @@ $(document).ready(function() {
             url: '/twitter_clone/num_seguidores.php',
             success: function(data) {
                 $('#num_seguidores').html(data);
+                $('#num_seguidores2').html(data);
             }
         });
     }

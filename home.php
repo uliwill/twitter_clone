@@ -31,8 +31,8 @@
 							</div>
 							<hr />
 							<div class="row">
-								<div class="col-6 texto8 text-center" id="num_tweets">TWEETS<br /></div>
-								<div class="col-6 texto8 text-center" id="num_seguidores">SEGUIDORES<br />1</div>
+								<div class="col-6 texto8 text-center" id="num_tweets"></div>
+								<div class="col-6 texto8 text-center" id="num_seguidores"></div>
 							</div>
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 				<div class="col-3">
 					<div class="card">
 						<div class="card-body text-center">
-							<h5><a href="procurar_pessoas.php">Procurar por pessoas</a></h5>
+							<h5><a href="procurar_pessoas.php" id="link_procurar_pessoas">Procurar por pessoas</a></h5>
 						</div>
 					</div>
 				</div>

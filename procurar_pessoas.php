@@ -31,8 +31,8 @@
 							</div>
 							<hr />
 							<div class="row">
-								<div class="col-6 texto8 text-center">TWEETS<br />1</div>
-								<div class="col-6 texto8 text-center">SEGUIDORES<br />1</div>
+								<div class="col-6 texto8 text-center" id="num_tweets2"></div>
+								<div class="col-6 texto8 text-center" id="num_seguidores2"></div>
 							</div>
 						</div>
 					</div>
