@@ -34,6 +34,7 @@ $(document).ready(function() {
                 success: function(data) {
                     $('#texto_tweet').val('');
                     atualizaTweet();
+                    atualizaNumTweet();
                 }
             });
         }
@@ -96,5 +97,27 @@ $(document).ready(function() {
             });
         }
     });
+
+    // ATUALIZAR NÚMERO DE TWEETS
+    function atualizaNumTweet() {
+        $.ajax({
+            url: '/twitter_clone/num_tweet.php',
+            success: function(data) {
+                $('#num_tweets').html(data);
+            }
+        });
+    }
+    atualizaNumTweet();
+
+    // ATUALIZAR NÚMERO DE SEGUIDORES
+    function atualizaNumSeguidores() {
+        $.ajax({
+            url: '/twitter_clone/num_seguidores.php',
+            success: function(data) {
+                $('#num_seguidores').html(data);
+            }
+        });
+    }
+    atualizaNumSeguidores();
 
 });

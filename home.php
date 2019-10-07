@@ -2,7 +2,7 @@
     session_start();
     if(!isset($_SESSION['usuario'])) {
         header('Location: index.php?erro=1');
-    }
+	}
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -31,8 +31,8 @@
 							</div>
 							<hr />
 							<div class="row">
-								<div class="col-6 texto8 text-center">TWEETS<br />1</div>
-								<div class="col-6 texto8 text-center">SEGUIDORES<br />1</div>
+								<div class="col-6 texto8 text-center" id="num_tweets">TWEETS<br /></div>
+								<div class="col-6 texto8 text-center" id="num_seguidores">SEGUIDORES<br />1</div>
 							</div>
 						</div>
 					</div>
